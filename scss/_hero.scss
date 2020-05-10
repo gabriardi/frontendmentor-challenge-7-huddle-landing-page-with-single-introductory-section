@@ -1,0 +1,35 @@
+.hero {
+  text-align: center;
+
+  @media only screen and (min-width: $bp-desktop) {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    column-gap: 4rem;
+  }
+  @media only screen and (min-width: $bp-larger) {
+    column-gap: 8rem;
+  }
+  &__img {
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__text {
+    margin-top: 5rem;
+    &__title {
+      margin-bottom: 2rem;
+    }
+    &__description {
+      margin: 0 auto 2rem;
+      @media only screen and (min-width: $bp-tablet) {
+        max-width: 80%;
+      }
+      @media only screen and (min-width: $bp-desktop) {
+        margin: 3rem 0 2rem;
+      }
+    }
+  }
+}

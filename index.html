@@ -1,33 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
 
-  Build The Community Your Fans Will Love
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        margin-top: 3rem;
+        color: black;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-container">
+      <div class="container">
+        <header class="header">
+          <div class="header__logo-img">
+            <img src="./images/logo.svg" alt="Huddle Logo" />
+          </div>
+        </header>
+        <main class="hero">
+          <div class="hero__img">
+            <img src="./images/illustration-mockups.svg" alt="mockups" />
+          </div>
+          <div class="hero__text">
+            <h1 class="hero__text__title">
+              Build The Community<br />
+              Your Fans Will Love
+            </h1>
+            <p class="hero__text__description">
+              Huddle re-imagines the way we build communities. You have a voice,
+              but so does your audience. Create connections with your users as
+              you engage in genuine discussion.
+            </p>
+            <button class="cta__btn">Register</button>
+          </div>
+        </main>
+        <section class="footer">
+          <div class="social-icons-container">
+            <div class="social-icon__round-container">
+              <svg class="social-icon" width="16" height="28">
+                <use href="./images/social.svg#icon-facebook" />
+              </svg>
+            </div>
+            <div class="social-icon__round-container">
+              <svg class="social-icon" width="26" height="28">
+                <use href="./images/social.svg#icon-twitter" />
+              </svg>
+            </div>
+            <div class="social-icon__round-container">
+              <svg class="social-icon" width="24" height="28">
+                <use href="./images/social.svg#icon-instagram" />
+              </svg>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
 
-  Register
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/gabriardi">Gabriele Ardizzone</a>.
+      </p>
+    </footer>
+  </body>
 </html>

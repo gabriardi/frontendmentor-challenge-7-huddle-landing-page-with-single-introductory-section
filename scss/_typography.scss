@@ -1,0 +1,20 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.6rem;
+
+  @media only screen and (min-width: $bp-tablet) {
+    font-size: 3.2rem;
+  }
+}
+
+p {
+  @media only screen and (min-width: $bp-tablet) {
+    line-height: 1.6;
+  }
+}

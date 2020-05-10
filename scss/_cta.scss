@@ -1,0 +1,25 @@
+.cta {
+  &__btn {
+    font-family: inherit;
+    font-size: 1.4rem;
+    background-color: #fff;
+    color: $color-primary;
+    border-radius: 5rem;
+    padding: 1.5rem 8rem;
+
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten($color-primary, 45);
+    }
+    &:active {
+      transform: translateY(0.2rem);
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    }
+  }
+}

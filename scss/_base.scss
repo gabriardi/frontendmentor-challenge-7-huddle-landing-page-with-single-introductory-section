@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @media only screen and (min-width: $bp-larger) {
+    font-size: 90%;
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: #fff;
+}
+
+.container {
+  padding: 3.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  @media only screen and (min-width: $bp-tablet) {
+    padding: 3.5rem 6rem;
+  }
+  @media only screen and (min-width: $bp-larger) {
+    padding: 4rem 8%;
+  }
+}
+
+.bg-container {
+  background: url(../images/bg-mobile.svg),
+    linear-gradient($color-primary, $color-primary);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media only screen and (min-width: $bp-desktop) {
+    background: url(../images/bg-desktop.svg),
+      linear-gradient($color-primary, $color-primary);
+  }
+}
