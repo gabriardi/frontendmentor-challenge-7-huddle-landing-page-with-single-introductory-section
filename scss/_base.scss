@@ -21,9 +21,7 @@ html {
 
 .container {
   padding: 3.4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
   min-height: 100vh;
 
   @media only screen and (min-width: $bp-tablet) {

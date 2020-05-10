@@ -1,7 +1,8 @@
 .footer {
-  align-self: center;
+  align-self: end;
+  justify-self: center;
 
   @media only screen and (min-width: $bp-tablet) {
-    align-self: flex-end;
+    justify-self: end;
   }
 }
